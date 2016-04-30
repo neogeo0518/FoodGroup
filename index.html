@@ -8,14 +8,16 @@
         font-family: "Rock Salt";
     }
     
-     .header {
-        padding-top: 20%;
-        padding-bottom: 25%;
-        background-image: url("http://ut.betachitheta.com/wp-content/uploads/2013/05/austin-copy.jpg");
+    .header-image {
+        background-image: url("https://scontent-ord1-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/12226970_977725252271279_7334408407991697024_n.jpg?oh=5888f879ed30cec7f01c856cc5081a19&oe=57A22BFF");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
+    }
+     .header {
+        padding-top: 15%;
+        padding-bottom: 35%;
     }
     
     .header ul{
@@ -24,6 +26,90 @@
     
     .header ul li {
         display: inline;
+    }
+    .header ul li button {
+        padding: 1.5%;
+        margin: 1%;
+        font-size: 2em;
+        color: white;
+        background-color: black;
+        border: none;
+    }
+    
+    .header ul li button:hover {
+        background-color: darkgray;
+    }
+    
+    .new-singles-background {
+        background-image: url("https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/12705720_1026229820754155_2640239746747796145_n.jpg?oh=82d41163f3e14cec583a8be8c2190bab&oe=57AE645C");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    .new-album-background {
+        background-color: coral;
+        background-size: cover;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    .upcoming-shows-background {
+        background-color: black;
+        background-size: cover;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    .booking-background {
+        background-color: darkgray;
+        background-size: cover;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    .booking p {
+        vertical-align: middle;
+        font-size: .5em;
+    }
+    
+    body h1 {
+        color: white;
+        padding-bottom: 5%;
+        text-decoration: underline;
+    }
+    
+    body h3 {
+        color: white;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    
+    body p {
+        color: white;
+        padding-top: 1%;
+        font-size: 1em;
+    }
+    
+    body a {
+        color: dodgerblue;
+    }
+    
+    body a:hover {
+        text-decoration: none;
+        color: royalblue;
+    }
+    
+    #envelope-icon {
+        color: white;
+        font-size: 1.5em;
+    }
+    
+    #envelope-icon:hover {
+        color: black;
     }
 </style>
 
@@ -57,26 +143,95 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Food Group</a>
+                    <a class="navbar-brand" href="#home">Food Group</a>
                 </div>
                 <div class="collapse navbar-collapse navbar-right" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">New Singles</a></li>
-                        <li><a href="#">New Album</a></li>
-                        <li><a href="#">Upcoming Shows</a></li>
+                        <li class="active"><a href="#new-singles">New Singles</a></li>
+                        <li><a href="#new-album">New Album</a></li>
+                        <li><a href="#upcoming-shows">Upcoming Shows</a></li>
                         <li><a href="#">Booking</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <div class="header container" id="home">
+        <div class="header-image" id="home">
+            <div class="header container">
                 <ul class="text-center">
-                    <li><a target="_blank" href="https://www.facebook.com/foodgroupmusic/?fref=ts"><button type="button">Facebook</button></a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/_food_group_/"><button type="button">Instagram</button></a></li>
-                    <li><a target="_blank" href="#"><button type="button">Twitter</button></a></li>
-                    <li><a target="_blank" href="http://foodgroup.bandcamp.com/"><button type="button">Bandcamp</button></a></li>
+                    <div class="row">
+                        <div class="col-md-3 text-center"><li><a target="_blank" href="https://www.facebook.com/foodgroupmusic/?fref=ts"><button type="button"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</button></a></li></div>
+                        <div class="col-md-3 text-center"><li><a target="_blank" href="https://www.instagram.com/_food_group_/"><button type="button"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</button></a></li></div>
+                        <div class="col-md-3 text-center"><li><a target="_blank" href="#"><button type="button"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</button></a></li></div>
+                        <div class="col-md-3 text-center"><li><a target="_blank" href="http://foodgroup.bandcamp.com/"><button type="button"><i class="fa fa-music" aria-hidden="true"></i> Bandcamp</button></a></li></div>
+                    </div>
                 </ul>
+            </div>
+        </div>
+        
+        <div class="new-singles-background" id="new-singles">
+            <div class="new-singles container">
+                <h1 class="text-center">New Singles</h1>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h3>Local Live</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/aU0MewGJ7tQ" frameborder="0" allowfullscreen></iframe>
+                        <p>Shout out to KVRX!</p>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <h3>Esque</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jnD_H8vU2WE" frameborder="0" allowfullscreen></iframe>
+                        <p>"Esque" from the new release Echo Location</p>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <h3>Tiny Desk Contest Audition</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ww8BhVmiOr0" frameborder="0" allowfullscreen></iframe>
+                        <p>"Sleepwalker" for NPR's Tiny Desk Contest</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="new-album-background text-center" id="new-album">
+            <div class="new-album container">
+                <h1>New Album</h1>
+                <h3>You Are</h3>
+                <img src="https://f4.bcbits.com/img/a0975142825_16.jpg">
+                <p>You are is available for purchase on <a target="_blank" href="https://foodgroup.bandcamp.com/album/you-are-ep">Bandcamp</a></p>
+            </div>
+        </div>
+        
+        <div class="upcoming-shows-background" id="upcoming-shows">
+            <div class="upcoming-shows container">
+                <h1 class="text-center">Upcoming Shows</h1>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <h3>April 9, 2015</h3>
+                        <h2>at Pearl Street Co-op</h2>
+                        <p><a target="blank" href="https://www.facebook.com/foodgroupmusic/photos/a.469600983083711.104276.469598343083975/1055232344520569/?type=3&theater">More Info</a></p>
+                    </div>
+                    <div class="col-md-4 text-center">     <h3>April 9, 2015</h3>
+                        <h2>at Pearl Street Co-op</h2>
+                        <p><a target="blank" href="https://www.facebook.com/foodgroupmusic/photos/a.469600983083711.104276.469598343083975/1055232344520569/?type=3&theater">More Info</a></p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h3>April 9, 2015</h3>
+                        <h2>at Pearl Street Co-op</h2>
+                        <p><a target="blank" href="https://www.facebook.com/foodgroupmusic/photos/a.469600983083711.104276.469598343083975/1055232344520569/?type=3&theater">More Info</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="booking-background" id="booking">
+            <div class="booking container">
+                <h1 class="text-center">Booking</h1>
+                <div class="row fa-5x">
+                    <div class="col-md-12 text-center">
+                        <p><a href="mailto:foodgroup@gmail.com?subject=Booking%20Inquiry"><i class="fa fa-envelope-square" id="envelope-icon" aria-hidden="true"></i></a> Contact:<a href="mailto:foodgroup@gmail.com?subject=Booking%20Inquiry">  Wiley Greene</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
