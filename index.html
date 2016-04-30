@@ -111,6 +111,22 @@
     #envelope-icon:hover {
         color: black;
     }
+    
+    .video-container {
+        position: relative;
+        height: 0;
+        padding-bottom: 56.25%;
+        padding-top: 25px;
+        overflow: hidden;
+    }
+    
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 </style>
 
 <html>
@@ -175,17 +191,17 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <h3>Local Live</h3>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/aU0MewGJ7tQ" frameborder="0" allowfullscreen></iframe>
+                        <div class="video-container"><iframe src="https://www.youtube.com/embed/aU0MewGJ7tQ" frameborder="0" allowfullscreen></iframe></div>
                         <p>Shout out to KVRX!</p>
                     </div>
                     <div class="col-md-12 text-center">
                         <h3>Esque</h3>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jnD_H8vU2WE" frameborder="0" allowfullscreen></iframe>
+                        <div class="video-container"><iframe src="https://www.youtube.com/embed/jnD_H8vU2WE" frameborder="0" allowfullscreen></iframe></div>
                         <p>"Esque" from the new release Echo Location</p>
                     </div>
                     <div class="col-md-12 text-center">
                         <h3>Tiny Desk Contest Audition</h3>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ww8BhVmiOr0" frameborder="0" allowfullscreen></iframe>
+                        <div class="video-container"><iframe src="https://www.youtube.com/embed/ww8BhVmiOr0" frameborder="0" allowfullscreen></iframe></div>
                         <p>"Sleepwalker" for NPR's Tiny Desk Contest</p>
                     </div>
                 </div>
